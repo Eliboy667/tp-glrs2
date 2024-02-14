@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE BON COIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <header class="titre">
+        <div class="container">
+            <img src="https://i.pinimg.com/originals/50/3e/41/503e4105f6b488a056591bc8f0d473bc.jpg" alt="LE BON COIN">
+        
+        </div>
+        <div>
+            <h3><i class="fa-solid fa-phone"></i> Bonjour je me nomme Mr Ousmane Dembeler et je suis ravie de vous presenter mon tout nouveaux restaurant qui vient tout juste d ouvrir s est portes aux almadies en face mansour motors nous serons ravie de vous recevoir durant nos portes ouvertes le 12/03/2024 a partir de 13h00 ou nous vous ferons gouter a la creme de la creme contactez nous: 77 363 40 88  </h3>
+        </div>
+    </header>
+    <section class="carrousel">
+        <div class="images">
+            <img class="left" src="https://kelianfood.com/wp-content/uploads/2022/02/IMG_1261-1200x1068.jpg">
+            <img class="right" src="https://th.bing.com/th/id/R.47e932cc1c7db436c87bc39119a6acdd?rik=cA1yRpHK2PHZNw&pid=ImgRaw&r=0">
+            <img class="left" src="https://th.bing.com/th/id/R.4063bdfebf974487f513903ff1413d24?rik=Ci8itPKaFW%2fXdg&pid=ImgRaw&r=0">
+        </div>
+    </section>
+    <nav>
+        <div id="toggle-btn">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <ul id="ulref">
+            <li>realisations</li>
+            <li>entrees</li>
+            <li>plats</li>
+            <li>desserts</li>
+            <li>boissons</li>
+        </ul>
+    </nav>
+    <section class="articles">
+        <article class="un">
+                                   <h5>PLATS DU JOUR</h5><br/>
+            <p><b>-ENTREES</b></p>
+            <p>saumon fumee rouge a la sauce tartare:7000frcs </p>
+            <p>caviar oriental sur son nid de chataigne12500frcs</p><br/>
+            <p><b>-PLATS</b></p>
+            <p>thiebou guinar revisite a la maniere du chef</p>
+            <p>garba avec sa sauce moyo et banane plantain</p>
+            <p><b>DESSERTS</b></p>
+            <p>foret noire</p>
+            <p>roll ice: vanille,chocolat,chewgum,fraise ou banane</p>
+            <a href="file:///C:/Users/hp/OneDrive/Bureau/le%20resto/page2.html">NOS PLATS PAGE2</a>
+        </article>
+        <article class="deux">
+            <h4>Nous vous servons un menu complet donc entree plat et dessert</h4>
+            <p>notre menu varie selon vos envies et desirs</p>
+            <p>faites le plein de saveurs culinaires </p>
+            <p>nous proposons des produits frais et qualitatifs pour les meilleurs des mets<p>
+            <p>vous aurez un personnel de qualite pret a exsocer tout vos souhaits</p>
+            <p>n hesiter pas vener nous rendre visite au bon coin</p>
+            <button class="bouton"><i class="fa-solid fa-file-alt fa-xl"></i>&nbsp;resevez votre place</button>
+        </article>
+    </section>
+    <section class="les temoignages">
+        <h2>Ce que nos clients pensent de nous</h2>
+        <div class="temoignages_card">
+            <div class="card">
+            <h5 class="Mami D."></h5>
+            <p>je me suis rendu hier avec mes copine a l occasion de mon anniversaire mais je peut vous que nous avons ete tres bien recu.leur cuisine ainsi que leur est impeccable. j adore!</p>
+         </div>
+         <div class="card">
+            <h5 class="name"> Ousmane A,</h5>
+            <P>je me suis regaler merci le bon coin🙏 </P>
+        </div>
+        <div class="card">
+            <h5 class="name">Cherif M.</h5>
+            <p>j aime la nourriture mais surtout le cadre conviviale du restaurant </p>
+        </div>
+        <div class="card">
+            <h5 class="name">Clara S.</h5>
+            <p>ce sont les ;eilleurs leurs cuisine oriental me rappele mon enfance😭 </p>
+        </div>
+        <div class="card">
+            <h5 class="name">Oggy C.</h5>
+            <p>tres chic super pour un rendez vous amoureux ou meme d affaires</p>
+        </div>
+        <div class="card">
+            <h5 class="name">Cardi B.</h5>
+            <p>it s my favorite restaurant in senegal</p>
+        </div>
+        <button>pour plus de temoignages de la clienteles click here</button>
+    </section>
+    <footer>
+        <p>le bon coin.com fix:33 835 20 20</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique voluptatem eos error ab officia sit, et commodi magnam, saepe in eius accusamus, inventore nihil quod cum tempora delectus labore!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis dicta aut pariatur incidunt assumenda soluta ipsum dolor placeat, quo nihil veniam ut quis nisi asperiores corporis ex velit perspiciatis earum.</p>
+    </footer>
+   </div> 
+   <script>
+    // Menu Hamburger
+    const btn = document.querySelector('#toggle-btn');
+    const ul = document.getElementById('ulref');
+
+    btn.onclick = ()=> ul.style.opacity == 0 ? ul.style.opacity = 1 : ul.style.opacity = 0;
+
+    //carrousel
+    const carrousel_content = document.querySelector('.images');
+    const prev = document.getElementById('gauche');
+    const next = document.getElementById('droite');
+    let translate = 0;
+
+    prev.onclick = ()=>{
+        translate += 100;
+        if(translate > 0)
+           translate = 0;
+        carrousel_content .style.transform ='translateX(' +translate +'%)'
+       
+    }
+    next.onclick = ()=>{
+        translate -= 100;
+        if(translate < -200) 
+            translate = -200;
+        carrousel_content.style.transform = 'translatexX(' + translate +'%)';
+    }
+   </script>
+</body>
+</html>
